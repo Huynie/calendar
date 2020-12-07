@@ -15,7 +15,7 @@ export default function Menu (){
         closeAllMenu,
         selectEvent
     } = useContext(productContext);
-    
+
     const save = (e) => {
         e.preventDefault();
         const event = document.getElementById('event').value;
@@ -127,26 +127,21 @@ export default function Menu (){
                     hover:bg-gray-300" 
                     id="add"
                     onClick={menu}>
-                        <svg 
-                            className="w-8 h-8 pointer-events-none" 
-                            fill="none" 
-                            stroke="currentColor" 
-                            viewBox="0 0 24 24" 
-                            xmlns="http://www.w3.org/2000/svg">
-                                <path 
-                                    className="pointer-events-none"
-                                    strokeLinecap="round" 
-                                    strokeLinejoin="round" 
-                                    strokeWidth="2" 
-                                    d="M17 14v6m-3-3h6M6 10h2a2 
-                                    2 0 002-2V6a2 2 0 00-2-2H6a2 
-                                    2 0 00-2 2v2a2 2 0 002 2zm10 
-                                    0h2a2 2 0 002-2V6a2 2 0 00-2-2h
-                                    -2a2 2 0 00-2 2v2a2 2 0 002 2zM6 
-                                    20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 
-                                    2 0 00-2 2v2a2 2 0 002 2z">
-                                </path>
-                        </svg>
+                       <svg 
+                        className="w-8 h-8 pointer-events-none" 
+                        fill="currentColor" 
+                        viewBox="0 0 20 20" 
+                        xmlns="http://www.w3.org/2000/svg">
+                            <path 
+                                className="pointer-events-none"
+                                fill-rule="evenodd" 
+                                d="M10 5a1 1 0 011 1v3h3a1
+                                 1 0 110 2h-3v3a1 1 0 11-2
+                                  0v-3H6a1 1 0 110-2h3V6a1
+                                   1 0 011-1z" 
+                                   clip-rule="evenodd">
+                            </path>
+                    </svg>
                 </button>
                 <br/>
                 <button 
